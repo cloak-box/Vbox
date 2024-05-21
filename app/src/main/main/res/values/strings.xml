@@ -1,9 +1,0 @@
-<resources>
-  <string name="app_name">虚拟系统</string>
-  <string name="install_app_list">添加应用</string>
-  <string name="main_add_title">添加</string>
-  <string name="common_progress_loading">加载中</string>
-  <string name="app_clear">清除数据</string>
-  <string name="app_stop">退出运行</string>
-  <string name="app_remove">移除应用</string>
-</resources>

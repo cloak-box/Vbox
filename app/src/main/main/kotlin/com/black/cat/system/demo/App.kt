@@ -11,6 +11,7 @@ class App : Application() {
 
   override fun attachBaseContext(base: Context?) {
     super.attachBaseContext(base)
+    Vlog.enableLog = true
     Vsystem.doAttachBaseContext(this)
   }
 

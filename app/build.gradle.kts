@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
   id("com.android.application")
   id("org.jetbrains.kotlin.android")
@@ -42,6 +44,14 @@ android {
 
 }
 
+val vbox_sdk_version: String by lazy {
+  val inputStream = File("${rootProject.projectDir}/app/vbox_sdk_version.properties").inputStream()
+  val properties = Properties()
+  properties.load(inputStream)
+  inputStream.close()
+  properties.getProperty("vbox_sdk_version")
+}
+
 dependencies {
   implementation("androidx.core:core-ktx:1.9.0")
   implementation("androidx.appcompat:appcompat:1.6.1")
@@ -49,6 +59,6 @@ dependencies {
   implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1")
   implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.3.1")
   implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.3.1")
-  implementation(files("./libs/vsystem.aar"))
-  compileOnly(files("./libs/fake_api.jar"))
+  implementation(files("../sdk/vsystem_${vbox_sdk_version}.aar"))
+  compileOnly(files("../sdk/fake_api_${vbox_sdk_version}.jar"))
 }

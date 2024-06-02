@@ -41,7 +41,7 @@ android {
       // but continue the build even when errors are found:
       isAbortOnError= false
     }
-
+  packaging { jniLibs { useLegacyPackaging = true } }
 }
 
 val vbox_sdk_version: String by lazy {

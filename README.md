@@ -37,13 +37,16 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
     VActivityManager.preloadAppByLaunchIntent(launchIntent, 0)
     VActivityManager.startActivity(launchIntent, 0)
     ``` 
-# api 文档
-
+# api 文档 
 
 |类|成员变量|方法 |描述 |
 |--------|--------|--------|--------|
 |Vsystem||doAttachBaseContext|初始化Vsystem sdk|
-|Vlog|enableLog||log开关|
+|||sdkVersion|获取sdk版本号|
+|||setConfig|设置额外的配置|
+|VsystemConfig||build|生成额外配置|
+|||setAppHomeComponentName|设置后，可修改Intent.ACTION_MAIN的行为，去到指定的activity|
+|Vlog||setEnableLog|log开关设置|
 |InstallResult|packageName||所安装app的包名|
 ||msg||错误信息，success为`false`才会有值|
 ||success||安装是否成功|
@@ -68,6 +71,8 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 
 # 更新记录
 ### 2024 
-###### 5月15日 支持微信登录
-###### 6月05日 修复运行时出现的jit崩溃
-
+###### 
+5月15日 支持微信登录
+###### 
+6月05日 适配Intent.ACTION_MAIN的行为，可以去到知道的activity
+       修复运行第三方app时出现的jit崩溃

@@ -6,6 +6,7 @@ import android.content.Context
 import android.os.Bundle
 import com.black.cat.vsystem.api.Vlog
 import com.black.cat.vsystem.api.Vsystem
+import com.black.cat.vsystem.api.VsystemConfig
 
 class App : Application() {
 
@@ -13,6 +14,7 @@ class App : Application() {
     super.attachBaseContext(base)
     Vlog.enableLog = true
     Vsystem.doAttachBaseContext(this)
+    Vsystem.config = VsystemConfig.build { it.appHomeComponentName }
   }
 
   override fun onCreate() {

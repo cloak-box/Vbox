@@ -12,7 +12,7 @@ import com.black.cat.vsystem.api.Vlog;
 import com.black.cat.vsystem.api.Vsystem;
 import com.black.cat.vsystem.api.VsystemConfig;
 
-class App extends Application {
+public class App extends Application {
   @Override
   protected void attachBaseContext(Context base) {
     super.attachBaseContext(base);

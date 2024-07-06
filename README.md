@@ -10,8 +10,8 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 | -------- | --------|
 | Abi  | `armeabi-v7a / arm64-v8a`| 
 | Android version     |   `10.0 ~ 14.0 及后续版本持续兼容更新` |  
-| google play     |   `不支持` |  
-| AccountManager     |   `不支持` |  
+| google play     |   `仅支持google三件套` |  
+| AccountManager     |   `支持` |  
 
 # 集成SDK
 1. 使用aar方式将Vsystem SDK引入到您的项目中。其中，vsystem.aar是核心SDK，而fake_api.jar则是系统API的编译依赖库，只需要在编译时使用即可。
@@ -44,6 +44,8 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 |Vsystem||doAttachBaseContext|初始化Vsystem sdk|
 |||sdkVersion|获取sdk版本号|
 |||setConfig|设置额外的配置|
+|||isSystemHasInstallGms|系统是否安装gms服务|
+|||installGms|安装gms服务|
 |VsystemConfig||build|生成额外配置|
 |||setAppHomeComponentName|设置后，可修改Intent.ACTION_MAIN的行为，去到指定的activity|
 |Vlog||setEnableLog|log开关设置|
@@ -65,8 +67,8 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 
 
 # todo list
-- [ ] 支持google 套件 
-- [ ] 支持AccountManager api
+- [x] 支持google 套件 
+- [x] 支持AccountManager api
 - [ ] 沙盒中支持微信、qq 等第三方登录
 
 # 更新记录
@@ -76,3 +78,5 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 ###### 
 6月05日 适配Intent.ACTION_MAIN的行为，可以去到知道的activity
        修复运行第三方app时出现的jit崩溃
+######
+7月06日 支持google play 三件套

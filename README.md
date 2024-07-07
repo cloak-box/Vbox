@@ -15,7 +15,7 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 
 # 集成SDK
 1. 使用aar方式将Vsystem SDK引入到您的项目中。其中，vsystem.aar是核心SDK，而fake_api.jar则是系统API的编译依赖库，只需要在编译时使用即可。
-   具体操作步骤如下
+具体操作步骤如下
     - 将vsystem.aar和fake_api.jar文件复制到您的项目目录下的libs文件夹中。
     - 在您的项目根目录下的build.gradle文件中添加以下代码
     ```
@@ -37,7 +37,7 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
     VActivityManager.preloadAppByLaunchIntent(launchIntent, 0)
     VActivityManager.startActivity(launchIntent, 0)
     ``` 
-# api 文档
+# api 文档 
 
 |类|成员变量|方法 |描述 |
 |--------|--------|--------|--------|
@@ -71,16 +71,17 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 ## [隐藏工具箱](https://raw.githubusercontent.com/cloak-box/Vbox/master/apk/demo_1.0.7.apk)
 
 # todo list
-- [x] 支持google 套件
+- [x] 支持google 套件 
 - [x] 支持AccountManager api
 - [ ] 沙盒中支持微信、qq 等第三方登录
 
 # 更新记录
-### 2024
+### 2024 
 ###### 
 5月15日 支持微信登录
 ###### 
 6月05日 适配Intent.ACTION_MAIN的行为，可以去到知道的activity
-修复运行第三方app时出现的jit崩溃
+       修复运行第三方app时出现的jit崩溃
 ######
 7月06日 支持google play 三件套
+7月07日 修复Android 12 微信视频通话的奔溃

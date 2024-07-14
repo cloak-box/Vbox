@@ -68,7 +68,7 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 # 快速体验app
 
 # ![Markdown Logo](https://raw.githubusercontent.com/cloak-box/Vbox/master/apk/ic_launcher_round.webp)
-## [隐藏工具箱](https://raw.githubusercontent.com/cloak-box/Vbox/master/apk/demo_1.0.7.apk)
+## [隐藏工具箱](https://raw.githubusercontent.com/cloak-box/Vbox/master/apk/demo_1.0.9.apk)
 
 # todo list
 - [x] 支持google 套件 

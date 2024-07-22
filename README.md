@@ -39,27 +39,30 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
     ``` 
 # api 文档 
 
-|类|成员变量|方法 |描述 |
-|--------|--------|--------|--------|
-|Vsystem||doAttachBaseContext|初始化Vsystem sdk|
-|||sdkVersion|获取sdk版本号|
-|||setConfig|设置额外的配置|
-|||isSystemHasInstallGms|系统是否安装gms服务|
-|||installGms|安装gms服务|
-|VsystemConfig||build|生成额外配置|
-|||setAppHomeComponentName|设置后，可修改Intent.ACTION_MAIN的行为，去到指定的activity|
-|Vlog||setEnableLog|log开关设置|
-|InstallResult|packageName||所安装app的包名|
-||msg||错误信息，success为`false`才会有值|
-||success||安装是否成功|
-|VActivityManager||startActivity|启动应用|
-|||preloadAppByLaunchIntent|预加载应用|
-|VPackageManager||getInstalledApplications|获取沙盒中已按照的所有app|
-|||isInstalled|判断app是否在沙盒中按照|
-|||getLaunchIntentForPackage|获取沙盒中指定app的`launch intent`|
-|||forceStopApp|强制停止应用|
-|||clearApk|清楚app数据|
-|||unInstallApk|卸载app|
+|类|成员变量|方法 | 描述                                         |
+|--------|--------|--------|--------------------------------------------|
+|Vsystem||doAttachBaseContext| 初始化Vsystem sdk                             |
+|||sdkVersion| 获取sdk版本号                                   |
+|||setConfig| 设置额外的配置                                    |
+|||isSystemHasInstallGms| 系统是否安装gms服务                                |
+|||installGms| 安装gms服务                                    |
+|VsystemConfig||build| 生成额外配置                                     |
+|||setAppHomeComponentName| 设置后，可修改Intent.ACTION_MAIN的行为，去到指定的activity |
+|||setEnableOaidHook| 开启oaidhook                                 |
+|||setEnableDaemonService| 开启守护进程                                     |
+|||setNotification| 设置后台服务的通知栏                                 |
+|Vlog||setEnableLog| log开关设置                                    |
+|InstallResult|packageName|| 所安装app的包名                                  |
+||msg|| 错误信息，success为`false`才会有值                   |
+||success|| 安装是否成功                                     |
+|VActivityManager||startActivity| 启动应用                                       |
+|||preloadAppByLaunchIntent| 预加载应用                                      |
+|VPackageManager||getInstalledApplications| 获取沙盒中已按照的所有app                             |
+|||isInstalled| 判断app是否在沙盒中按照                              |
+|||getLaunchIntentForPackage| 获取沙盒中指定app的`launch intent`                 |
+|||forceStopApp| 强制停止应用                                     |
+|||clearApk| 清除app数据                                    |
+|||unInstallApk| 卸载app                                      |
 
 
 # 多开支持情况

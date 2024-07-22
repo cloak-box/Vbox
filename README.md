@@ -68,7 +68,7 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 # 快速体验app
 
 # ![Markdown Logo](https://raw.githubusercontent.com/cloak-box/Vbox/master/apk/ic_launcher_round.webp)
-## [隐藏工具箱](https://raw.githubusercontent.com/cloak-box/Vbox/master/apk/demo_1.0.9.apk)
+## [隐藏工具箱](https://raw.githubusercontent.com/cloak-box/Vbox/master/apk/demo_1.0.10.apk)
 
 # todo list
 - [x] 支持google 套件 
@@ -77,6 +77,12 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 
 # 更新记录
 ### 2024 
+###### 7月21日
+- 适配悬浮窗权限的申请
+- 兼容1加手机oaid的获取 
+- 优化第三方app的ContentProvider安装流程
+- 增加守护进程方式防止部分手机系统冻结server进程，造成binder通信出现异常
+- 兼容android 13 google play 的登录
 ###### 7月14日
 - 修复Android 14 GMS 启动ANR的问
 - 修复google location 服务获取不到地理位置的问题

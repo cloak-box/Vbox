@@ -9,7 +9,7 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 |      |    兼容性 |
 | -------- | --------|
 | Abi  | `armeabi-v7a / arm64-v8a`| 
-| Android version     |   `10.0 ~ 14.0 及后续版本持续兼容更新` |  
+| Android version     |   `9.0 ~ 14.0 及后续版本持续兼容更新` |  
 | google play     |   `仅支持google三件套` |  
 | AccountManager     |   `支持` |  
 
@@ -71,7 +71,7 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 # 快速体验app
 
 # ![Markdown Logo](https://raw.githubusercontent.com/cloak-box/Vbox/master/apk/ic_launcher_round.webp)
-## [隐藏工具箱](https://raw.githubusercontent.com/cloak-box/Vbox/master/apk/demo_1.0.11.apk)
+## [隐藏工具箱](https://raw.githubusercontent.com/cloak-box/Vbox/master/apk/demo_1.0.12.apk)
 
 # todo list
 - [x] 支持google 套件
@@ -80,6 +80,13 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 
 # 更新记录
 ### 2024
+###### 8月03日
+- 增加对android 9的支持
+- 增加导入sdcard上未安装的app
+- 兼容 PendingIntentReceiver
+- android 14 适配 VibratorService的vibrate方法
+- 适配android 14 后台启动activity
+- 修复momo无法发送聊天消息的bug
 ###### 7月21日
 - 适配悬浮窗权限的申请
 - 兼容1加手机oaid的获取

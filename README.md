@@ -34,6 +34,8 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
     VActivityManager.preloadAppByLaunchIntent(launchIntent, 0)
     VActivityManager.startActivity(launchIntent, 0)
     ``` 
+> 具体可以参考[https://github.com/cloak-box/vbox-demo](https://github.com/cloak-box/vbox-demo)
+
 # api 文档
 
 |类|成员变量|方法 | 描述                                         |

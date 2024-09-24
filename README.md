@@ -16,8 +16,8 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 # 集成SDK
 1. 依赖
     ```
-    implementation("io.github.cloak-box.sdk:core:1.0.15")
-    implementation("io.github.cloak-box.library:fake-api:1.0.15")
+    implementation("io.github.cloak-box.sdk:core:1.0.16")
+    implementation("io.github.cloak-box.library:fake-api:1.0.16")
     ```
 1. 初始化，在Application#attachBaseContext中加入以下代码初始化
     ```
@@ -34,7 +34,6 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
     VActivityManager.preloadAppByLaunchIntent(launchIntent, 0)
     VActivityManager.startActivity(launchIntent, 0)
     ``` 
-> 具体可以参考[https://github.com/cloak-box/vbox-demo](https://github.com/cloak-box/vbox-demo)   
 # api 文档
 
 |类|成员变量|方法 | 描述                                         |
@@ -73,8 +72,10 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 
 # 更新记录
 ### 2024
-######
-- 优化activity stack 管理
+###### 9月11日
+- 修复 UserManager isUserOfType hook crash
+###### 9月04日
+- 修复 StorageStatsManager queryStatsForUid  getAllocatableBytes hook crash
 ###### 8月04日
 - 修复Android 9 启动app奔溃的问题
 ###### 8月03日

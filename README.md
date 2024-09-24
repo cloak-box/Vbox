@@ -76,6 +76,8 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 - 修复 UserManager isUserOfType hook crash
 ###### 9月04日
 - 修复 StorageStatsManager queryStatsForUid  getAllocatableBytes hook crash
+###### 8月23日
+- 优化activity stack 管理
 ###### 8月04日
 - 修复Android 9 启动app奔溃的问题
 ###### 8月03日

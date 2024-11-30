@@ -16,8 +16,8 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 # 集成SDK
 1. 依赖
     ```
-    implementation("io.github.cloak-box.sdk:core:1.0.16")
-    implementation("io.github.cloak-box.library:fake-api:1.0.16")
+    implementation("io.github.cloak-box.sdk:core:1.0.19")
+    implementation("io.github.cloak-box.library:fake-api:1.0.19")
     ```
 1. 初始化，在Application#attachBaseContext中加入以下代码初始化
     ```
@@ -74,6 +74,8 @@ Vsystem SDK是一款免费的产品，虽然不开源，但您可以自由使用
 
 # 更新记录
 ### 2024
+###### 11月30日
+- 修复 微信启动偶发奔溃，跟X5web内核有关
 ###### 9月11日
 - 修复 UserManager isUserOfType hook crash
 ###### 9月04日
